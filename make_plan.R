@@ -1,6 +1,11 @@
 # experimental design
 library(tidyverse)
 set.seed(123898)
+
+peas <- c("MNWP24-039-b")
+
+rye <- "Danko"
+
 trts <- tibble(n_rye = c(0,2,4)) |> 
   mutate(n_pea = 4-n_rye, trt_name = c("all_pea", "half_n_half", "all_rye")) |> 
   # set n reps to 5
