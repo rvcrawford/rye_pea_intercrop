@@ -31,4 +31,4 @@ trts <- tibble(n_rye = c(0,2,4)) |>
   slice_sample(prop = 1,by = rep) |> 
   mutate(box_order = 1:n())
 
-
+write_csv(trts, "experiment_setup_planted20251031.csv")
